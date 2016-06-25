@@ -40,7 +40,20 @@ public class Figuras {
         this.figura = figura;
     }
 
-    public static void calculo(){
-
+    public void calculo(){
+        switch(figura){
+            case "Réctangulo":
+                resultado = valor1 * valor2;
+                break;
+            case "Triángulo":
+                resultado = (valor1 * valor2) / 2;
+                break;
+            case "Paralelogramo":
+                resultado = valor1 * valor2;
+                break;
+            case "Rombo":
+                resultado = (valor1 * valor2)/ 2;
+                break;
+        }
     }
 }
