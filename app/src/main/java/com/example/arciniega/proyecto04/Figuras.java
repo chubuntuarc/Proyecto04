@@ -41,7 +41,8 @@ public class Figuras {
     }
 
 
-    public double calculo(){
-       return resultado = (valor1 * valor2) / 2;
+    public String calculo(){
+        resultado = (valor1 * valor2) / 2;
+        return "" + String.valueOf(resultado);
     }
 }

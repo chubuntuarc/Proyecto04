@@ -10,7 +10,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Se declara la clase Figuaras para despues instanciarla
+    // Se declara la clase Figuras para despues instanciarla
     private Figuras figuras;
 
     // Variables que se usaran para asignar los valores correspondientes en la clase Figuras
@@ -44,9 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 figuras.setValor1(Double.parseDouble(valor1.getText().toString())); //Se convierten a string y despues a integer para obtener el numero en el EditText
                 figuras.setValor2(Double.parseDouble(valor2.getText().toString()));
 
-                double resultadox = figuras.calculo();
 
-                resultado.setText("" + resultadox);
+                resultado.setText(figuras.calculo());
 
             }
         });
