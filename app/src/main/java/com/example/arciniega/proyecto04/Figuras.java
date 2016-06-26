@@ -6,54 +6,42 @@ package com.example.arciniega.proyecto04;
 public class Figuras {
 
     //Declaración de variables
-    private int valor1;
-    private int valor2;
-    private int resultado;
-    private String figura;
+    private double valor1;
+    private double valor2;
+
+    public double getValor1() {
+        return valor1;
+    }
+
+    public void setValor1(double valor1) {
+        this.valor1 = valor1;
+    }
+
+    public double getValor2() {
+        return valor2;
+    }
+
+    public void setValor2(double valor2) {
+        this.valor2 = valor2;
+    }
+
+    public double getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(double resultado) {
+        this.resultado = resultado;
+    }
+
+    private double resultado;
 
     //Constructor de la clase
     public Figuras(){
 
     }
 
-    public int getValor1() {
-        return valor1;
-    }
 
-    public void setValor1(int valor1) {
-        this.valor1 = valor1;
-    }
-
-    public int getValor2() {
-        return valor2;
-    }
-
-    public void setValor2(int valor2) {
-        this.valor2 = valor2;
-    }
-
-    public String getFigura() {
-        return figura;
-    }
-
-    public void setFigura(String figura) {
-        this.figura = figura;
-    }
-
-    public void calculo(){
-        switch(figura){
-            case "Réctangulo":
-                resultado = valor1 * valor2;
-                break;
-            case "Triángulo":
-                resultado = (valor1 * valor2) / 2;
-                break;
-            case "Paralelogramo":
-                resultado = valor1 * valor2;
-                break;
-            case "Rombo":
-                resultado = (valor1 * valor2)/ 2;
-                break;
-        }
+    public double calculo(){
+       return resultado = (valor1 * valor2) / 2;
     }
 }
